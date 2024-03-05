@@ -6,8 +6,9 @@ export default function Category({ products, categoryId }) {
     return (
         <div className={ styles.category }>
             {
-                products.map(product => 
+                products.map((product, index) => 
                     <Product
+                        key={ index }
                         name={ product.name }
                         price={ product.price }
                         weight={ product.weight }

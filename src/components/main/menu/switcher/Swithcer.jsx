@@ -7,8 +7,9 @@ export default function Swithcer({ options, category, setCategory, setProducts }
         <div className={ styles.switcher }>
             <div className={ styles.options }>
                 {
-                    options.map(option => 
-                        <Option 
+                    options.map((option, index) => 
+                        <Option
+                            key={ index } 
                             name={ option.name }
                             img={ option.img }
                             category={ option.id }
