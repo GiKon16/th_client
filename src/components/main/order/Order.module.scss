@@ -1,0 +1,152 @@
+.order {
+    width: 100%;
+    position: relative;
+
+    padding: 100px 0 100px 0;
+
+    overflow: hidden;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+
+        width: 80%;
+
+        margin: 0 auto;
+
+        .title {
+            margin-bottom: 50px;
+
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 64px;
+            color: #8A573C;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .input,
+            .textarea,
+            .button {
+                padding: 0 10px;
+                max-width: 350px;
+                min-width: 260px;
+                width: 100%;
+
+                height: 72px;
+
+                margin: 15px 0;
+
+                background-color: #8A573C;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+
+                font-family: 'Montserrat Medium';
+                color: white;
+                font-size: 24px;
+
+                transition: all 1s;
+            }
+
+            .input::placeholder,
+            .textarea::placeholder {
+                text-align: center;
+                font-family: 'Montserrat Medium';
+                color: white;
+                font-size: 24px;
+            }
+
+            .textarea {
+                padding: 10px;
+                height: 150px;
+            }
+
+            .input:focus,
+            .textarea:focus,
+            .input:hover,
+            .textarea:hover {
+                background-color: #EDCE87;
+                color: #8A573C;
+            }
+
+            .input:focus::placeholder,
+            .textarea:focus::placeholder {
+                color: #8A573C;
+            }
+
+            .input:hover::placeholder,
+            .textarea:hover::placeholder {
+                color: #8A573C;
+            }
+
+            .button {
+                position: relative;
+
+                font-family: 'Montserrat Medium';
+
+                cursor: pointer;
+
+                .pr1, .pl1, .pr2, .pl2 {
+                    position: absolute;
+                    top: 0;
+                }
+
+                .pl1, .pl2 {
+                    left: 0;
+                }
+
+                .pr1, .pr2 {
+                    right: 0;
+                }
+
+                .pr2, .pl2 {
+                    display: none;
+                }
+            }
+
+            .button:hover {
+                background-color: #EDCE87;
+
+                color: #8A573C;
+
+                .pr1, .pl1 {
+                    display: none;
+                }
+
+                .pr2, .pl2 {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .img-background {
+        position: absolute;
+        top: 55%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 800px) {
+    .order {
+
+        .content {
+
+            .title {
+                font-size: 48px;
+            }
+        }
+
+        .img-background {
+            display: none;
+        }
+    }
+}

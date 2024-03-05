@@ -1,0 +1,127 @@
+.home {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    padding-top: 50px;
+
+    .content {
+        display: flex;
+        justify-content: center;
+
+        width: 90%;
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+
+            animation: show 1.5s;
+
+            z-index: 2;
+    
+            .title {
+                font-family: 'Metrolite';
+                font-size: 64px;
+                text-transform: uppercase;
+                color: #8A573C;
+            }
+    
+            .text {
+                max-width: 650px;
+    
+                margin: 30px 0 50px 0;
+    
+                font-family: 'Montserrat Italic';
+                font-size: 24px;
+
+                .important {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+    
+            .button {
+                width: 320px;
+                height: 60px;
+    
+                background-color: #8A573C;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+    
+                font-family: 'Montserrat Medium';
+                color: white;
+                font-size: 24px;
+    
+                cursor: pointer;
+
+                transition: all 1s;
+            }
+
+            .button:hover {
+                background-color: #EDCE87;
+                color: #8A573C;
+            }
+        }
+    
+        .mill {
+            position: relative;
+            top: -5%;
+            right: 5%;
+    
+            transition: all 0.3s;
+
+            animation: millShow 1.5s;
+
+            z-index: 1;
+
+            .img {
+                max-width: 100%;
+                min-width: 390px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .home {
+        overflow: hidden;
+
+        .content {
+            justify-content: start;
+
+            .description {
+
+                .title {
+                    font-size: 48px;
+                }
+
+                .text {
+                    width: 75%;
+
+                    font-size: 16px;
+                }
+            }
+
+            .mill {
+                right: 32%;
+                top: 15%;
+            }
+        }
+    }
+}
+
+@keyframes show {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+}
+
+@keyframes millShow {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+ 

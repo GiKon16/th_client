@@ -1,0 +1,112 @@
+.burger-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    z-index: 3;
+
+    transition: all 0.8s;
+    transform: translateX(200%);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 80vw;
+        height: 100%;
+
+        position: fixed;      
+        top: 0;
+        right: 0;
+
+        background-color: white;
+        border-top-left-radius: 20px;
+
+        .title {
+            position: relative;
+            top: -26px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .navbar-item {
+                position: relative;
+
+                margin: 20px 0;
+
+                font-size: 28px;
+                white-space: nowrap;
+
+                cursor: pointer;
+                
+                transition: all 0.5s;
+            }
+
+            .navbar-item::after {
+                content: '';
+
+                width: 0;
+                height: 3px;
+
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+
+                background-color: #8A573C;
+                border-radius: 10px;
+
+                transition: all 0.5s;
+            }
+
+            .navbar-item:hover {
+                transform: rotate(-20deg);
+            }
+
+            .navbar-item:hover::after {
+                width: 100%;
+            }
+
+            .active::after {
+                content: '';
+            
+                width: 100%;
+                height: 3px;
+        
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+        
+                background-color: #8A573C;
+                border-radius: 10px;
+        
+                transition: all 0.5s;
+            }
+        }
+    } 
+}
+
+.slide {
+    transform: translateX(0%);
+    z-index: 4;
+}
+
+@media(min-width:1175px) {
+
+    .burger-navbar {
+        display: none;
+    }
+}
+

@@ -1,0 +1,59 @@
+.header {
+    width: 100%;
+
+    position: sticky;
+    inset: 0;
+
+    background-color: white;
+
+    z-index: 3;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 80%;
+
+        margin: 0 auto;
+
+        .title {
+            position: relative;
+            top: -30px;
+        }
+
+        .phone-important {
+
+            .img {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+
+        .content {
+
+            .title {
+                order: 2;
+                margin: 0 auto;
+            }
+
+            .phone-important {
+                position: absolute;
+                left: 0;
+                order: 1;
+
+                .call {
+                    display: none;
+                }
+
+                .phone {
+                    display: none;
+                }
+            }
+        }
+    }
+}

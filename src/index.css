@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Medium';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url(./fonts/montserrat/MontserratAlternates-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(./fonts/montserrat/MontserratAlternates-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url(./fonts/montserrat/MontserratAlternates-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url(./fonts/montserrat/MontserratAlternates-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Italic';
+  src: url(./fonts/montserrat/MontserratAlternates-Italic.ttf);
+}
+
+
+@font-face {
+  font-family: 'Metrolite';
+  src: url(./fonts/metrolite/Metrolite\ 2\ W01\ Roman.ttf);
+}

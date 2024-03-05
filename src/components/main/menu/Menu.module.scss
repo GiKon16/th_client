@@ -1,0 +1,42 @@
+.menu {
+    width: 100%;
+    padding-top: 30px;
+
+    .content {
+        width: 80%;
+
+        margin: 0 auto;
+
+        .title {
+            text-align: center;
+
+            text-transform: uppercase;
+            font-size: 64px;
+            color: #8A573C;
+        }
+    }
+}
+
+@media (max-width: 945px) {
+    .menu {
+        padding-top: 100px;
+
+        .content {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .menu {
+
+        .content {
+
+            .title {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+

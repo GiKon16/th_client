@@ -1,0 +1,19 @@
+.category {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category::-webkit-scrollbar {
+    width: 0;
+}
+
+@media (max-width: 945px) {
+    .category {
+        justify-content: start;
+        flex-wrap: nowrap;
+
+        position: relative;
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,66 @@
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: none;
+
+    width: 200px;
+
+    margin: 0 20px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    .img-container {
+
+        .img {
+   
+        }
+    }
+
+    .name {
+        margin-top: 20px;
+
+        text-align: center;
+        font-family: 'Montserrat Light';
+        font-size: 20px;
+    }
+}
+
+.option::after, .active::after {
+    content: '';
+
+    width: 0;
+    height: 3px;
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    background-color: #8A573C;
+    border-radius: 10px;
+
+    transition: all 0.5s;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.option:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 945px) {
+    .option {
+
+        .name {
+            font-size: 16px;
+        }
+    }
+
+    .passive {
+        opacity: 0.5;
+    }
+}
