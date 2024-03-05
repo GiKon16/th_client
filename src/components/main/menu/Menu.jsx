@@ -41,7 +41,7 @@ export default function Menu() {
             <div className={ styles.content }>
                 <h1 className={ styles.title }>Меню</h1>
                 <Swithcer options={ categories } category={ category } setCategory={ setCategory } setProducts={ setProducts }/>
-                { products.length !== 0 ? <Category products={ products } category={ category }/> : <Loader/> }
+                {/* { products.length !== 0 ? <Category products={ products } category={ category }/> : <Loader/> } */}
             </div>
         </div>
     )
